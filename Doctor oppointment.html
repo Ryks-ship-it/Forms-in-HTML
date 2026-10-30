@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Doctors Appointment</title>
+</head>
+<body>
+    <p>Fill in the form below to schedule your doctor's appointment:</p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>You'r name:</label>
+            <input type="text" name="name" required><br><br>
+            <label>Patient ID:</label>
+            <input type="password" name="patient_id" required><br><br>
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required><br><br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>You'r visit</legend>
+            <label>Choose you'r doctor:</label>
+            <select id="doctor">
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+                <option value="dr_brown">Dr. Brown</option>
+            </select><br><br>
+            <label>Why are you visiting?</label>
+            <input type="radio" name="reason" value="checkup" required> Check-up<br>
+            <input type="radio" name="reason" value="consultation" required> Consultation<br>
+            <input type="radio" name="reason" value="emergency" required> Emergency<br><br>
+            <label>Any notes for the doctor:</label><br>
+            <textarea id="notes" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preffered visit day</legend>
+            <input type="checkbox" name="days" value="monday"> Monday<br>
+            <input type="checkbox" name="days" value="tuesday"> Tuesday<br>
+            <input type="checkbox" name="days" value="wednesday"> Wednesday<br>
+            <input type="checkbox" name="days" value="thursday"> Thursday<br>
+            <input type="checkbox" name="days" value="friday"> Friday<br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Book my appointment">
+    </form>
+</body>
+</html>
